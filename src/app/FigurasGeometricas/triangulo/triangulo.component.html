@@ -1,0 +1,32 @@
+<ion-list lines="none">
+
+  <ion-item>
+    <h2>Triangulo</h2>
+  </ion-item>
+
+  <ion-card>
+
+    <img src="assets/img/Triangulo.png "/>
+  </ion-card>
+
+  <ion-item>
+    <ion-input [(ngModel)]="ladoA" type="number" label="lado A"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-input [(ngModel)]="ladoB" type="number" label="Lado B"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-input [(ngModel)]="ladoC" type="number" label="Lado C"></ion-input>
+    </ion-item>
+
+  <ion-item>
+    <ion-button (click)="calcularP()">CALCULAR EL PERIMETRO</ion-button>  
+  </ion-item>
+
+  <ion-item>
+    {{resultado}}
+  </ion-item>
+  
+</ion-list>

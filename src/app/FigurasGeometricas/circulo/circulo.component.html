@@ -1,0 +1,25 @@
+<ion-list lines="none">
+
+  <ion-item>
+    <h2>Circulo</h2>
+  </ion-item>
+  <ion-card>
+    <img src="assets/img/Circulo.png "/>
+  </ion-card>
+
+  <ion-item>
+    <ion-input [(ngModel)]="calcular" type="number" label="radio"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click)="calcularP()">CALCULAR EL PERIMETRO</ion-button>  
+  </ion-item>
+
+  <ion-item>
+    {{resultado}}
+  </ion-item>
+  
+</ion-list>
+
+
+
